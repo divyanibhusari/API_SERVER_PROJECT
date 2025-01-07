@@ -1,6 +1,6 @@
 import express from "express"
 
-import { getHome, getalllanguages, getLanguageByName, getLanguageById, getLanguageByFilter ,getSortedLanguages} from "../controllers/controller.js"
+import { getHome, getalllanguages, getLanguageByName, getLanguageById, getLanguageByFilter ,getSortedLanguages,getcombineFilter} from "../controllers/controller.js"
 
 let router = express()
 
@@ -15,6 +15,8 @@ router.get("/language/id/:id", getLanguageById)
 router.get("/language/filter",getLanguageByFilter)
 
 router.get("/language/sortlearning", getSortedLanguages)
+
+router.get("/language/combineFilter",getcombineFilter)
 
 router.get("*", (req, res) => {
 

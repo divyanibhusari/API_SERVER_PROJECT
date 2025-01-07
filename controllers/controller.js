@@ -216,4 +216,46 @@ let getSortedLanguages = (req, res) => {
     res.status(200).json({ message: "sorted based on duration", result })
 }
 
-export { getHome, getalllanguages, getLanguageByName, getLanguageById, getLanguageByFilter ,getSortedLanguages }
+let getcombineFilter = (req, res) => {
+
+    let { scope, level, duration_month_limit, forBeginner, difficulty } = req.query
+
+    if (scope && level && duration_month_limit && forBeginner && difficulty) {
+
+        let matchWithScope = scope
+
+        let result = languages.filter((language) => {
+
+            let flag = false
+
+            language.scope.forEach((scope) => {
+
+                if (scope.toLowerCase() == matchWithScope.toLowerCase()) {
+
+                    if (language.level.toLowerCase() == level.toLowerCase()) {
+
+                        if (language.duration_month <= duration_month_limit) {
+
+                            if (language.forBeginner.toLowerCase() == forBeginner.toLowerCase()) {
+
+                                if (language.difficuly.toLowerCase() == difficulty.toLowerCase()) {
+
+                                    flag = true
+
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+
+            return flag ? language : null
+            
+        })
+
+        res.status(200).json({ message: `this is combine filter route , you were looking for a language/s that is ${scope}, ${level}, ${duration_month_limit}, ${forBeginner} & ${difficulty}`, result })
+    }
+
+    res.status(400).json({ message: "Not a valid filter query !" })
+}
+export { getHome, getalllanguages, getLanguageByName, getLanguageById, getLanguageByFilter, getSortedLanguages, getcombineFilter }

@@ -6,7 +6,7 @@ let languages = [
         level: "higher",
         duration_month: 6,
         difficuly: "mid",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ let languages = [
         level: "higher",
         duration_month: 5,
         difficuly: "easy",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ let languages = [
         level: "higher",
         duration_month: 8,
         difficuly: "mid",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ let languages = [
         level: "higher",
         duration_month: 9,
         difficuly: "hard",
-        forBeginner: false
+        forBeginner: "false"
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ let languages = [
         level: "higher",
         duration_month: 7,
         difficuly: "mid",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ let languages = [
         level: "higher",
         duration_month: 4,
         difficuly: "easy",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ let languages = [
         level: "higher",
         duration_month: 6,
         difficuly: "mid",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ let languages = [
         level: "higher",
         duration_month: 6,
         difficuly: "mid",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ let languages = [
         level: "higher",
         duration_month: 5,
         difficuly: "mid",
-        forBeginner: false
+        forBeginner: "false"
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ let languages = [
         level: "higher",
         duration_month: 5,
         difficuly: "easy",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 11,
@@ -96,7 +96,7 @@ let languages = [
         level: "higher",
         duration_month: 8,
         difficuly: "hard",
-        forBeginner: false
+        forBeginner: "false"
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ let languages = [
         level: "higher",
         duration_month: 6,
         difficuly: "mid",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 13,
@@ -114,7 +114,7 @@ let languages = [
         level: "higher",
         duration_month: 7,
         difficuly: "hard",
-        forBeginner: false
+        forBeginner: "false"
     },
     {
         id: 14,
@@ -123,7 +123,7 @@ let languages = [
         level: "higher",
         duration_month: 5,
         difficuly: "mid",
-        forBeginner: false
+        forBeginner: "false"
     },
     {
         id: 15,
@@ -132,7 +132,7 @@ let languages = [
         level: "higher",
         duration_month: 4,
         difficuly: "mid",
-        forBeginner: false
+        forBeginner: "false"
     },
     {
         id: 16,
@@ -141,7 +141,7 @@ let languages = [
         level: "higher",
         duration_month: 5,
         difficuly: "mid",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 17,
@@ -150,7 +150,7 @@ let languages = [
         level: "basic",
         duration_month: 3,
         difficuly: "easy",
-        forBeginner: true
+        forBeginner: "true"
     },
     {
         id: 18,
@@ -159,7 +159,7 @@ let languages = [
         level: "higher",
         duration_month: 4,
         difficuly: "mid",
-        forBeginner: false
+        forBeginner: "false"
     },
     {
         id: 19,
@@ -168,7 +168,7 @@ let languages = [
         level: "higher",
         duration_month: 6,
         difficuly: "mid",
-        forBeginner: false
+        forBeginner: "false"
     },
     {
         id: 20,
@@ -177,7 +177,7 @@ let languages = [
         level: "basic",
         duration_month: 4,
         difficuly: "easy",
-        forBeginner: true
+        forBeginner: "true"
     }
 ];
 
